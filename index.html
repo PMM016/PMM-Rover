@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perchance AI Chatbot Starter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">Perchance.org starter</p>
+        <h1>AI Chatbot Blueprint</h1>
+        <p class="lead">
+          Use this starter to craft a character prompt, then paste it into Perchance's AI
+          Character Chat experience.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>1. Open Perchance</h2>
+        <p>
+          Visit <a href="https://perchance.org" target="_blank" rel="noreferrer">perchance.org</a>
+          and open the AI Character Chat tool.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>2. Paste your chatbot prompt</h2>
+        <p class="muted">
+          Copy the prompt below, then paste it into the character/description field in Perchance.
+        </p>
+        <textarea id="prompt" rows="14" spellcheck="false">
+You are "Rover", a friendly AI guide for new users of Perchance.
+
+Tone: upbeat, helpful, and concise.
+
+Knowledge: explain how Perchance prompts work, suggest examples, and ask clarifying questions.
+
+Behavior rules:
+- Keep replies under 120 words.
+- End with a single question to move the chat forward.
+- If asked for personal data or unsafe requests, refuse gently and redirect to safe topics.
+
+Conversation starter: "Hey! I can help you craft prompts for Perchance. What kind of chatbot do you want to build today?"
+        </textarea>
+        <div class="actions">
+          <button id="copy">Copy prompt</button>
+          <span id="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3. Test and iterate</h2>
+        <ul>
+          <li>Run a few chats and refine the tone or rules.</li>
+          <li>Add special knowledge or personality traits.</li>
+          <li>Save versions of your prompt for future experiments.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
